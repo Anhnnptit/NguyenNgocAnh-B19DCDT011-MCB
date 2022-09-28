@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mcb.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"/>
-      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -26,21 +21,19 @@
 
 
     
-    <script>
-
+    <!-- <script>
     function timedRefresh(timeoutPeriod) {
 	  setTimeout("location.reload(true);",timeoutPeriod);
     }
-
     window.onload = timedRefresh(5000);
+    </script> -->
 
-    </script>
     <title>mcb</title>
   </head>
 
   <body>
    
-    <script src="mcb.js"></script>
+     <script type="text/javascript" src="mcb.js"></script>
 
    <h1 class=" text-white text-center" style="background-image: linear-gradient(to right bottom, #f00606c3, #91ed11ba);border-radius:10px;font-weight: bold"> <i>NGUYỄN NGỌC ANH - B19DCDT011</i></h1>
     <div class="container-fluid pt-3 ">
@@ -137,12 +130,14 @@
             </figure>
 
         </div>
+        
+       
 
        <script>
         Highcharts.chart('container', {
 
     title: {
-        text: 'Bảng thống kê'
+        text: 'Biểu Đồ Thống Kê'
     },
 
     subtitle: {
@@ -151,13 +146,13 @@
 
     yAxis: {
         title: {
-            text: 'Number of Employees'
+            text: 'Data'
         }
     },
 
     xAxis: {
         accessibility: {
-            rangeDescription: 'Range: 2012 to 2022'
+            rangeDescription: 'Range: 2021 to 2022'
         }
     },
 
@@ -207,12 +202,12 @@
         
 
 
-        <div class="col-sm-4  ">
+        <div class="col-sm-4">
 
-                    <div style="height:250px;border-radius:10px; font-weight: bold;text-align: center;border-style: double;border-width: 10px;border-color: rgb(214, 66, 16); ">
-                <img id="myImage" src="bongden.jpg" style="width:120px" alt="" >
-                <button type="button" class="btn btn-success" onclick="on()">on</button>
-                <button type="button" class="btn btn-danger" onclick="off()">off</button>
+            <div style="height:250px;border-radius:10px; font-weight: bold;text-align: center;border-style: double;border-width: 10px;border-color: rgb(214, 66, 16); ">
+                <img id="myImage" src="bongden.jpg" style="width:120px; margin-top: 20px;" alt="" >
+                <button type="button" class="btn btn-success" onclick="on()">ON</button>
+                <button type="button" class="btn btn-danger" onclick="off()">OFF</button>
                 <script>
                   function on(){
                     document.getElementById("myImage").src= "bongdensang.jpg"
@@ -222,12 +217,18 @@
                   }
                 </script>
             </div>
-
-             <div id="button2" style="height:250px;border-radius:10px; font-weight: bold;text-align: center;background: #e009a0a6;font-size:40px;font-weight: bold;color:white">
-              <div class="ok1">Button_2</div>
-              <button onclick="document.getElementById('button2').style.backgroundColor = 'blue'" style="border-radius:10px;background: blue;color:white;font-weight: bold;" >ON</button>
-              <button onclick="document.getElementById('button2').style.backgroundColor = 'orange'" style="border-radius:10px;background: orangered;color:white;font-weight: bold" >OFF</button>
+                                    
+            <div id="wrapper" style=" font-weight: bold ;height:250px;border-radius:10px;text-align: center; border-style:double;border-width: 10px;border-color: rgb(214, 66, 16);">  
+                <div  style="color:rgb(241, 99, 10);font-size:40px;margin-right: 40px;margin-top:2px;font-weight: bold;">Điều hoà</div>
+                
+                <div><input type="checkbox" class="switch-toggle" id="light-dark"> </div>
+                 <img id="myImage" src="dieuhoa.jpg" style="width:150px" alt="" > 
+             
             </div>
+            
+
+       
+
         </div>
 
       </div>
