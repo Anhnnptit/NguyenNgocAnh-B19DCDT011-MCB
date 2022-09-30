@@ -46,7 +46,7 @@
                   <img src="https://cdn2.iconfinder.com/data/icons/weather-and-seasons-1/110/Icons__heat-512.png" style="width:3rem;height:3rem"> 
                   <div id="nhietdo"></div>
                   <script>
-                     var y = document.getElementById("nhietdo").innerHTML = Math.floor(Math.random() * 100);
+                     var y = document.getElementById("nhietdo").innerHTML = Math.floor(Math.random() * 60);
                     
                     if (y < 20){
                     document.getElementById("ngocanh2").style.backgroundColor = "#FF0066";
@@ -210,11 +210,24 @@
                 <button type="button" class="btn btn-danger" onclick="off()">OFF</button>
                 <script>
                   function on(){
-                    document.getElementById("myImage").src= "bongdensang.jpg"
+                    let text = "\t Bạn vừa yêu cầu bật đèn1\n\t Nhấn ok để thực hiện hoặc cancel để huỷ yêu cầu.";
+                    if(confirm(text)==true){
+                      document.getElementById("myImage").src= "bongdensang.jpg";
+                    }else{
+                      document.getElementById("myImage").src= "bongden.jpg";
+                    }
+                    
                   }
                   function off(){
-                    document.getElementById("myImage").src= "bongden.jpg"
+                    let text = "\t Bạn vừa yêu cầu tắt đèn1\n\t Nhấn ok để thực hiện hoặc cancel để huỷ yêu cầu.";
+                    if(confirm(text)==true){
+                      document.getElementById("myImage").src= "bongden.jpg";
+                    }else{
+                      document.getElementById("myImage").src= "bongdensang.jpg";
+                    }
+                    
                   }
+                
                 </script>
             </div>
                                     
